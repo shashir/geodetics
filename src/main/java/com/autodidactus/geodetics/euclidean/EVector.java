@@ -46,7 +46,7 @@ public class EVector {
 	public EVector normalize() {
 		double normOfA = norm();
 		if (isZero(normOfA)) {
-			throw new IllegalArgumentException("Can not normalize zero vector, bitch.");
+			throw new IllegalArgumentException("Can not normalize zero vector.");
 		}
 		return new EVector(getX() / normOfA, getY() / normOfA, getZ() / normOfA);
 	}
